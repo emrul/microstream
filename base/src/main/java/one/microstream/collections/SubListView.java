@@ -627,6 +627,10 @@ public class SubListView<E> implements XGettingList<E>
 			return (SubListView<E>)super.parent();
 		}
 
+		@Override
+		public <T> T[] toArray(T[] a) {
+			return null;
+		}
 	}
 
 }

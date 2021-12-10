@@ -3112,6 +3112,10 @@ implements XTable<K, V>, HashCollection<K>, Composition, IdentityEqualityLogic
 				return (Keys)super.parent();
 			}
 
+			@Override
+			public <T> T[] toArray(T[] a) {
+				return null;
+			}
 		}
 
 		@Override
@@ -4034,6 +4038,10 @@ implements XTable<K, V>, HashCollection<K>, Composition, IdentityEqualityLogic
 				return (Values)super.parent();
 			}
 
+			@Override
+			public <T> T[] toArray(T[] a) {
+				return null;
+			}
 		}
 
 	}

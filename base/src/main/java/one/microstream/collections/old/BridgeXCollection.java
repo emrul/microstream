@@ -166,4 +166,9 @@ public class BridgeXCollection<E> implements OldCollection<E>
 		return this.subject.toArray();
 	}
 
+	@Override
+	public <T> T[] toArray(T[] a) {
+		return null;
+	}
+
 }

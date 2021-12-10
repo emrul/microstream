@@ -753,6 +753,10 @@ implements XImmutableList<E>, Composition, IdentityEqualityLogic
 			return (ConstList<E>)super.parent();
 		}
 
+		@Override
+		public <T> T[] toArray(T[] a) {
+			return null;
+		}
 	}
 
 }

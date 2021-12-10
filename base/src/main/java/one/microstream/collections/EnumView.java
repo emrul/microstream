@@ -524,6 +524,10 @@ public class EnumView<E> implements XGettingEnum<E>
 			return (EnumView<E>)super.parent();
 		}
 
+		@Override
+		public <T> T[] toArray(T[] a) {
+			return null;
+		}
 	}
 
 }

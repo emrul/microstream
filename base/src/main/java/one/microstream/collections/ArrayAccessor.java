@@ -1087,6 +1087,10 @@ public final class ArrayAccessor<E> extends AbstractSimpleArrayCollection<E> imp
 			return (ArrayAccessor<E>)super.parent();
 		}
 
+		@Override
+		public <T> T[] toArray(T[] a) {
+			return null;
+		}
 	}
 
 

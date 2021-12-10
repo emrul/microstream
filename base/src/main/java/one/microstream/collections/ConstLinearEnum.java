@@ -736,6 +736,10 @@ implements XImmutableEnum<E>, IdentityEqualityLogic
 			return (ConstLinearEnum<E>)super.parent();
 		}
 
+		@Override
+		public <T> T[] toArray(T[] a) {
+			return null;
+		}
 	}
 
 }

@@ -749,6 +749,10 @@ public final class ArrayView<E> extends AbstractSimpleArrayCollection<E> impleme
 			return (ArrayView<E>)super.parent();
 		}
 
+		@Override
+		public <T> T[] toArray(T[] a) {
+			return null;
+		}
 	}
 
 }

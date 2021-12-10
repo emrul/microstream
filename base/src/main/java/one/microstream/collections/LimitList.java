@@ -1926,6 +1926,10 @@ implements XList<E>, Composition, IdentityEqualityLogic
 			return (LimitList<E>)super.parent();
 		}
 
+		@Override
+		public <T> T[] toArray(T[] a) {
+			return null;
+		}
 	}
 
 

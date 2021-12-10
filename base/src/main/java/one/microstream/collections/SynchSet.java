@@ -622,6 +622,10 @@ public final class SynchSet<E> implements XSet<E>, Synchronized
 			return (SynchSet<E>)super.parent();
 		}
 
+		@Override
+		public <T> T[] toArray(T[] a) {
+			return null;
+		}
 	}
 
 }

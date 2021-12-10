@@ -2358,6 +2358,10 @@ implements XList<E>, Composition, IdentityEqualityLogic
 			return (BulkList<E>)super.parent();
 		}
 
+		@Override
+		public <T> T[] toArray(T[] a) {
+			return null;
+		}
 	}
 
 

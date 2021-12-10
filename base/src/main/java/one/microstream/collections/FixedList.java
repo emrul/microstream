@@ -1068,6 +1068,10 @@ public final class FixedList<E> extends AbstractSimpleArrayCollection<E> impleme
 			return (FixedList<E>)super.parent();
 		}
 
+		@Override
+		public <T> T[] toArray(T[] a) {
+			return null;
+		}
 	}
 
 }

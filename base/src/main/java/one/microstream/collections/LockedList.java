@@ -1480,6 +1480,10 @@ public final class LockedList<E> implements XList<E>, Synchronized
 			return (LockedList<E>)super.parent();
 		}
 
+		@Override
+		public <T> T[] toArray(T[] a) {
+			return null;
+		}
 	}
 
 }

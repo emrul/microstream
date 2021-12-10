@@ -690,6 +690,10 @@ public class ListAccessor<E> implements XSettingList<E>
 			return (ListAccessor<E>)super.parent();
 		}
 
+		@Override
+		public <T> T[] toArray(T[] a) {
+			return null;
+		}
 	}
 
 }

@@ -2288,6 +2288,10 @@ public final class EqBulkList<E> extends AbstractSimpleArrayCollection<E> implem
 			return (EqBulkList<E>)super.parent();
 		}
 
+		@Override
+		public <T> T[] toArray(T[] a) {
+			return null;
+		}
 	}
 
 

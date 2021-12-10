@@ -520,6 +520,10 @@ public class ListView<E> implements XGettingList<E>
 			return (ListView<E>)super.parent();
 		}
 
+		@Override
+		public <T> T[] toArray(T[] a) {
+			return null;
+		}
 	}
 
 }

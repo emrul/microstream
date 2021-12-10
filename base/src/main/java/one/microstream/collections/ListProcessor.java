@@ -667,6 +667,10 @@ public final class ListProcessor<E> implements XProcessingList<E>
 			return (ListProcessor<E>)super.parent();
 		}
 
+		@Override
+		public <T> T[] toArray(T[] a) {
+			return null;
+		}
 	}
 
 }

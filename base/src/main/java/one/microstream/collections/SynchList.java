@@ -1115,6 +1115,10 @@ public final class SynchList<E> implements XList<E>, Synchronized
 			return (SynchList<E>)super.parent();
 		}
 
+		@Override
+		public <T> T[] toArray(T[] a) {
+			return null;
+		}
 	}
 
 }

@@ -1999,6 +1999,10 @@ public final class ArrayCollector<E> extends AbstractSimpleArrayCollection<E> im
 			return (ArrayCollector<E>)super.parent();
 		}
 
+		@Override
+		public <T> T[] toArray(T[] a) {
+			return null;
+		}
 	}
 
 }

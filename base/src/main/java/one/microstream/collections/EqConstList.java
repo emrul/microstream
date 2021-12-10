@@ -708,6 +708,10 @@ public final class EqConstList<E> extends AbstractSimpleArrayCollection<E> imple
 			return (EqConstList<E>)super.parent();
 		}
 
+		@Override
+		public <T> T[] toArray(T[] a) {
+			return null;
+		}
 	}
 
 }

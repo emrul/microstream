@@ -1,4 +1,3 @@
-
 package one.microstream.collections;
 
 /*-
@@ -375,6 +374,10 @@ public final class SetView<E> implements XGettingSet<E>
 			return (SetView<E>)super.parent();
 		}
 
+		@Override
+		public <T> T[] toArray(T[] a) {
+			return null;
+		}
 	}
 
 	@Override

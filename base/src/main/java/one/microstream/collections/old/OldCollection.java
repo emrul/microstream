@@ -30,12 +30,12 @@ public interface OldCollection<E> extends Collection<E>
 {
 	public XGettingCollection<E> parent();
 
-	@Override
-	public default <T> T[] toArray(final T[] target)
-	{
-		XArrays.copyTo(this.parent(), target);
-		return target;
-	}
+//	@Override
+//	public default <T> T[] toArray(final T[] target)
+//	{
+//		XArrays.copyTo(this.parent(), target);
+//		return target;
+//	}
 
 
 	public default void bla()

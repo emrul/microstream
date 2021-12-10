@@ -36,8 +36,8 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<maven.compiler.source>1.8</maven.compiler.source>
-		<maven.compiler.target>1.8</maven.compiler.target>
+		<maven.compiler.source>18</maven.compiler.source>
+		<maven.compiler.target>18</maven.compiler.target>
 		<org.owasp.depencency.check.version>6.1.6</org.owasp.depencency.check.version>
 		<org.eclipse.jdt.ecj.version>3.26.0</org.eclipse.jdt.ecj.version>
 		<license.inceptionYear>2019</license.inceptionYear>

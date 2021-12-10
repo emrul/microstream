@@ -3267,6 +3267,10 @@ implements XTable<K, V>, HashCollection<K>, Composition
 				return (Keys)super.parent();
 			}
 
+			@Override
+			public <T> T[] toArray(T[] a) {
+				return null;
+			}
 		}
 
 		@Override
@@ -4195,6 +4199,10 @@ implements XTable<K, V>, HashCollection<K>, Composition
 				return (Values)super.parent();
 			}
 
+			@Override
+			public <T> T[] toArray(T[] a) {
+				return null;
+			}
 		}
 
 	}

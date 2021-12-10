@@ -1680,6 +1680,10 @@ implements XEnum<E>, HashCollection<E>, Composition
 			return (EqHashEnum<E>)super.parent();
 		}
 
+		@Override
+		public <T> T[] toArray(T[] a) {
+			return null;
+		}
 	}
 
 }

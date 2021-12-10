@@ -38,13 +38,14 @@ public interface ConfigurationBasedCreator<T>
 		final Class<T> resultType
 	)
 	{
-		return StreamSupport.stream(
-			ServiceLoader.load(ConfigurationBasedCreator.class).spliterator(),
-			false
-		)
-		.filter(creator -> resultType.isAssignableFrom(creator.resultType()))
-		.collect(Collectors.toList())
-		;
+//		return StreamSupport.stream(
+//			ServiceLoader.load(ConfigurationBasedCreator.class).spliterator(),
+//			false
+//		)
+//		.filter(creator -> resultType.isAssignableFrom(creator.resultType()))
+//		.collect(Collectors.toList())
+//		;
+		return null;
 	}
 	
 	
